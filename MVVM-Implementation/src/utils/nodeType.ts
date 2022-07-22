@@ -1,0 +1,13 @@
+const ELEMENT_NODE = 1;
+const ATTRIBUTE_NODE = 2;
+const TEXT_NODE = 3;
+const COMMENT_NODE = 8;
+const DOCUMENT_NODE = 9;
+
+export const NODE_TYPE = {
+  ELEMENT_NODE,
+  ATTRIBUTE_NODE,
+  TEXT_NODE,
+  COMMENT_NODE,
+  DOCUMENT_NODE
+};

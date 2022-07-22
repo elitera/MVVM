@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+
+      #app {
+        height: 100%;
+        text-align: center;
+        box-sizing: border-box;
+        padding-top: 100px;
+      }
+
+      input {
+        font-size: 16px;
+        padding: 5px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        background: none;
+        padding: 8px 20px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <input data-bind="name" placeholder="Enter your name.">
+      <p>
+        Hello! My name is {{ name }}
+      </p>
+      <div>
+        <button @click="changeName">Change name!</button>
+        <button @click="alertName">Alert name!</button>
+      </div>
+    </div>
+  </body>
+</html>
